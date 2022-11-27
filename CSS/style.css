@@ -8,7 +8,7 @@
     font-size:18px;
 }
 body{
-    background-image: url(/images/bg-desktop-light.jpg);
+    background-image: url("/images/bg-desktop-light.jpg");
     background-repeat: no-repeat;
     background-color: hsl(0, 0%, 98%);
     height:100vh;
@@ -110,7 +110,7 @@ input::placeholder{
     position:relative;
 }
 .activities::after{
-    content:url(/images/icon-cross.svg);
+    content:url("/images/icon-cross.svg");
     position:absolute;
     right:20px;
     display:none;
@@ -230,11 +230,11 @@ input.white::placeholder{
         font-size:12px;
     }
     body{
-        background-image: url(/images/bg-mobile-light.jpg);
+        background-image: url("/images/bg-mobile-light.jpg");
         background-repeat: no-repeat;
     }
     .mobile-dark{
-        background-image: url(/images/bg-mobile-dark.jpg);
+        background-image: url("/images/bg-mobile-dark.jpg");
         background-repeat: no-repeat;
     }
     .container{
