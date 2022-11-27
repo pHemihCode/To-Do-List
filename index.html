@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/468504c811.js" crossorigin="anonymous"></script>
+  <title>TO DO List</title>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <h2>TO DO</h2>
+      <img src="images/icon-moon.svg" alt="Day" id="image" onclick="changeTheme()">
+    </div>
+    <div class="typing-part" id="typeit">
+      <div class="circle"></div>
+      <input type="text" id="type" name=" type" placeholder="Create a new todo...">
+    </div>
+   <div class="activity-list" id="tasks">
+    <div class="activities done">
+      <div class="circle"><img src="images/icon-check.svg" alt=""></div>
+      <label for="first-act" id="completed-task">Complete online javascript course</label>
+    </div>
+    <div class="activities done2">
+      <div class="circle" onclick="firstTask()"><img src="images/icon-check.svg" alt=""></div>
+      <label for="second-act">Jog aroung the park 3x</label>
+    </div>
+    <div class="activities done2"> 
+        <div class="circle"><img src="images/icon-check.svg" alt=""></div>
+        <label for="third-act">10 minutes medication</label> 
+    </div>
+    <div class="activities done2">
+        <div class="circle"><img src="images/icon-check.svg" alt=""></div>
+        <label for="fourth-act">Read for 1 hour</label>
+    </div>
+    <div class="activities done2">
+      <div class="circle"><img src="images/icon-check.svg" alt=""></div>
+      <label for="fifth-act">Pick up groceries</label>
+    </div>
+    <div class="activities done2">
+      <div class="circle"><img src="images/icon-check.svg" alt=""></div>
+      <label for="sixth-act">Complete Todo App on Frontend Mentor</label>
+    </div>
+    <div class="flex-container">
+      <div class="time">
+        <p class="same-color">5 items left</p>
+      </div>
+      <div class="the-acts">
+        <p>All</p>
+        <p class="siblings">Active</p>
+        <p class="siblings">Completed</p>
+      </div>
+      <div class="completed">
+        <p class="same-color">Clear Completed</p>
+      </div>
+   </div>
+    </div>
+    <div class="drag" id="thedrag">
+      <p>Drag and drop to reorder list</p>
+     </div>
+  </div>
+  <script src="Js/index.js"></script>
+</body>
+</html>

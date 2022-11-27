@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+:root{
+    font-size:18px;
+}
+body{
+    background-image: url(/images/bg-desktop-light.jpg);
+    background-repeat: no-repeat;
+    background-color: hsl(0, 0%, 98%);
+    height:100vh;
+}
+.container{
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    height:100vh;
+    width:500px;
+}
+.top h2{
+    font-size:2rem;
+    color: hsl(0, 0%, 98%);
+}
+.top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top img{
+    width:5%;
+    height:25px;
+    cursor:pointer;
+}
+.circle{
+    width:25px;
+    height:25px;
+    background-color: transparent;
+    border-radius:30px;
+    border: 1px solid  hsl(236, 33%, 92%);
+}
+.circle:hover{
+    border: 1px solid  hsl(220, 98%, 61%);
+}
+.activities,
+.typing-part{
+    display:flex;
+    align-items: center;
+    cursor:pointer;
+}
+label{
+    padding-left:25px;
+    font-size:1rem;
+}
+.typing-part{
+    background-color:hsl(0, 0%, 98%) ;
+    width:100%;
+    padding:15px;
+    border-radius:5px;
+    margin:30px 0 4px 0;
+}
+input{
+    padding-left:25px;
+    font-size:1rem;
+    font-weight:400;
+    border:none;
+    background-color: transparent;
+    width:100%;
+    color:hsl(235, 19%, 35%);
+}
+input:focus{
+    outline:0;
+}
+input::placeholder{
+    color: hsl(233, 11%, 84%);
+}
+.activity-list{
+    background-color:#fff;
+    margin-top:20px;
+    border-radius:5px;
+    width:100%;
+    box-shadow:0px 0px 30px 0px  hsla(220, 82%, 64%, 0.238);
+}
+.done{
+    display:flex;
+}
+.done .circle{
+    width:25px;
+    height:25px;
+    background-image:linear-gradient(to right ,hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    text-align: center;
+}
+.done label{
+    text-decoration: line-through;
+    color:hsl(233, 11%, 84%);
+    padding-left:25px;
+}
+.circle img{
+    margin-top:7px;
+}
+.activities{
+    display:flex;
+    border-bottom:2px solid  hsl(236, 33%, 92%);
+    margin:2px 0;
+    color:hsl(235, 19%, 35%);
+    padding:15px;
+    position:relative;
+}
+.activities::after{
+    content:url(/images/icon-cross.svg);
+    position:absolute;
+    right:20px;
+    display:none;
+}
+.activities:hover::after{
+    display: block;
+}
+
+/* ---------------------------------------MAGIC------------------------------------ */
+
+.done2 .circle{
+    background-image: none;
+}
+.done2 .circle.showone{
+    background-image:linear-gradient(to right ,hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.done2 .circle img{
+    display:none;
+}
+.showchecked{
+    display:block;
+}
+/* ---------------------------------------------------------------------------------- */
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+    padding:15px;
+    font-size:.8rem;
+}
+.time,.completed{
+    color: hsl(233, 11%, 84%);
+    cursor:pointer;
+}
+.completed:hover{
+    color:  hsl(235, 19%, 35%);;
+}
+.the-acts{
+    display:flex;
+}
+.the-acts p{
+    color:hsl(236, 9%, 61%);
+    font-weight:700;
+    cursor:pointer;
+}
+.the-acts p:first-child{
+    color:hsl(220, 98%, 61%);
+}
+.the-acts p:nth-child(2){
+    padding:0 10px;
+}
+.the-acts p:nth-child(2):hover{
+    color:  hsl(235, 19%, 35%);
+}
+.drag{
+    color:hsl(236, 9%, 61%);
+    font-size:.7rem;
+    text-align: center;
+    margin-top:30px;
+}
+/* --------------------------------------------------------DARK THEME------------------------------------------------------ */
+.dark{
+    background-color: hsl(235, 21%, 11%);
+    background-image: url("/images/bg-desktop-dark.jpg");
+}
+.rings{
+    border: 1px solid  hsl(237, 14%, 26%);
+}
+.search{
+    background-color: hsl(235, 24%, 19%);
+    
+}
+input.white{
+    color:hsl(234, 39%, 85%);
+}
+input.white::placeholder{
+    color: hsl(233, 14%, 35%);
+}
+.tasks{
+    background-color: hsl(235, 24%, 19%);
+    box-shadow: none;
+}
+.change{
+    color: hsl(234, 39%, 85%);
+}
+.done label.done-color{
+    color: hsl(233, 14%, 35%);
+}
+.activities.theline{
+    border-bottom:2px solid hsl(233, 14%, 35%) ;
+    color: hsl(234, 39%, 85%);
+}
+.samecolor{
+    color: hsl(233, 14%, 35%);
+}
+.the-acts p.sib{
+    color:hsl(232, 10%, 46%);
+}
+.the-acts p.sib:nth-child(2):hover{
+    color: hsl(234, 39%, 85%);
+}
+.samecolor:hover{
+    color: hsl(234, 39%, 85%);
+}
+.drag.colorchange{
+    color: hsl(233, 14%, 35%)
+}
+/* ========================================================1440PX=============================================== */
+@media screen and (min-width:1200px) and (max-width:1440px){
+    body{
+        background-image: url(/images/bg-desktop-light.jpg);
+        background-size:100% 43%;
+    }
+}
+/* =========================================================400PX================================================= */
+@media screen and (max-width:400px){
+    :root{
+        font-size:12px;
+    }
+    body{
+        background-image: url(/images/bg-mobile-light.jpg);
+        background-repeat: no-repeat;
+    }
+    .mobile-dark{
+        background-image: url(/images/bg-mobile-dark.jpg);
+        background-repeat: no-repeat;
+    }
+    .container{
+        margin-top:0px;
+        width:340px;
+    }
+    .top img{
+        width:7%;
+    }
+    .drag{
+        margin-bottom:30px;
+    }
+}
