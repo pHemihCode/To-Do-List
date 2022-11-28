@@ -238,7 +238,7 @@ input.white::placeholder{
         background-repeat: no-repeat;
     }
     .container{
-        margin-top:50px;
+        margin-top:0px;
         width:340px;
     }
     .top img{
